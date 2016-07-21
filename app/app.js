@@ -1,5 +1,2 @@
-var app = angular.module('WeddingApp', ['ui.bootstrap'])
+var app = angular.module('WeddingApp', ['WeddingCtrl', 'ui.router'])
 
-app.controller('ImageCtrl', ['$scope', function($scope) {
-
-}])
