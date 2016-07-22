@@ -1,0 +1,12 @@
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline;
+}
+
+.img-thumbnail {
+	height: 300px;
+	/*width: 150px !important;*/
+}
