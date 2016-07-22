@@ -1,7 +1,14 @@
-angular.module('WeddingCtrl', ['ngAnimate', 'ui.bootstrap', 'bootstrapLightbox'])
+angular.module('WeddingCtrl', ['WeddingServices', 'ngAnimate', 'ui.bootstrap', 'bootstrapLightbox'])
 
-app.controller('GalleryCtrl', function ($scope, Lightbox) {
-$scope.name = "Kendall Maniulit"
+app.controller('HomeCtrl', ['$scope', '$state', function($scope, $state) {
+	$scope.name = "Kendall Maniulit"
+
+	$state.go('Home')
+
+}])
+
+app.controller('GalleryCtrl', function($scope, Lightbox) {
+
 
 $scope.images = [
     {
